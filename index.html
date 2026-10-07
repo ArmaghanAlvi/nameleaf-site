@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NameLeaf — find names by meaning</title>
+  <meta name="description" content="NameLeaf finds names by meaning across 21 languages. Launching soon.">
+  <meta name="robots" content="noindex">
+  <style>
+    :root { --bg:#fbfaf7; --fg:#1d1d1b; --muted:#5f5d57; --accent:#2f6b4f; --rule:#e4e1d8; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#141513; --fg:#ecebe6; --muted:#a3a19a; --accent:#7cc3a0; --rule:#2c2d2a; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 2rem 1.25rem; background: var(--bg); color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { max-width: 38rem; }
+    h1 { font: 600 clamp(2.2rem, 6vw, 3.2rem)/1.1 Georgia, "Times New Roman", serif; margin: 0 0 .5rem; }
+    .tag { color: var(--accent); font-weight: 600; margin: 0 0 1.5rem; }
+    p { margin: 0 0 1rem; }
+    .langs { color: var(--muted); font-size: .95rem; }
+    .status {
+      display: inline-block; margin: .5rem 0 1.25rem; padding: .3rem .8rem;
+      border: 1px solid var(--rule); border-radius: 999px; font-size: .9rem; color: var(--muted);
+    }
+    a { color: var(--accent); }
+    footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .85rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>NameLeaf</h1>
+    <p class="tag">Find names by meaning, across 21 languages.</p>
+    <p>
+      Search for a meaning (brave, light, storm), choose the exact sense you have in mind,
+      and NameLeaf traces it through a multilingual dictionary graph to surface established
+      names and name-worthy words, grouped by how closely they relate to what you asked for.
+    </p>
+    <p class="langs">
+      English · German · Spanish · Polish · Russian · Greek · Irish · Welsh · Icelandic ·
+      Latin · Old English · Old Norse · Sanskrit · Hindi · Persian · Arabic · Hebrew ·
+      Swahili · Chinese · Japanese · Korean
+    </p>
+    <span class="status">Launching soon</span>
+    <p>Follow the build on <a href="https://github.com/ArmaghanAlvi/nameleaf">GitHub</a>.</p>
+    <footer>
+      Built on Wiktionary data (via Kaikki.org) and open wordnets.
+      Full source attribution will be published with the site.
+    </footer>
+  </main>
+</body>
+</html>
